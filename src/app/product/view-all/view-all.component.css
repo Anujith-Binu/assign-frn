@@ -1,0 +1,23 @@
+.cards{
+    margin-top: 5px;
+    padding: 25px;
+}
+.card{
+    margin: 7%;
+    background-color: rgba(47, 47, 143, 0.623);
+    border-radius: 25px;
+    color: aliceblue;
+}
+.cat-cards{
+    margin-top: 5px;
+    padding: 25px;
+}
+.card2{
+    margin-top: 7%;
+    margin-left: 4%;
+    padding-bottom: 5%;
+}
+.card-text{
+    font-size: small;
+    padding-top: 25px;
+}

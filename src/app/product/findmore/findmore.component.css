@@ -1,0 +1,18 @@
+.find-img{
+    width: 100%;
+}
+
+.fin-d1{
+    text-align: center;
+    background-color:#303336;
+    color: #fff;
+    height: 140px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 3%;
+    flex-direction: column;
+}
+
+hr{
+    color: rgb(113, 110, 110);
+}

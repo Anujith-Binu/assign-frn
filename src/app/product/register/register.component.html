@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="title">Registration</div>
+  <div class="content">
+
+
+    <form [formGroup]="registerForm" id="d">
+      <div class="user-details">
+
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input formControlName="fname" name="fn" id="fn1" type="text" placeholder="Enter your name"><br>
+          <div *ngIf="this.registerForm.get('fname')?.errors && (this.registerForm.get('fname')?.touched)">
+            <p class="wrng">*must contain charectors only</p>
+
+          </div>
+        </div>
+
+
+        <div class="input-box">
+          <span class="details">Username</span>
+
+          <input formControlName="uname" name="un" id="un1" type="text" placeholder="Enter your username">
+          <div *ngIf="this.registerForm.get('uname')?.errors && (this.registerForm.get('uname')?.touched)">
+            <p class="wrng">*must contain charectors only</p>
+
+          </div>
+
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input formControlName="email" name="em" id="em1" type="text" placeholder="Enter your email" required>
+          <div *ngIf="this.registerForm.get('email')?.errors && (this.registerForm.get('email')?.touched)">
+            <p class="wrng">*enter valid email</p>
+
+          </div>
+
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input formControlName="phone" name="Pn" id="pn1" type="text" placeholder="Enter your number" required>
+          <div *ngIf="this.registerForm.get('phone')?.errors && (this.registerForm.get('phone')?.touched)">
+            <p class="wrng">*numbers only</p>
+
+          </div>
+
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input formControlName="psw" name="ps" id="ps1" type="text" placeholder="Enter your password" required>
+          <div *ngIf="this.registerForm.get('psw')?.errors && (this.registerForm.get('psw')?.touched)">
+            <p class="wrng">*this field required</p>
+
+          </div>
+
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input formControlName="cpsw" name="cp" id="cp1" type="text" placeholder="Confirm your password" required>
+          <div *ngIf="this.registerForm.get('cpsw')?.errors && (this.registerForm.get('cpsw')?.touched)">
+            <p class="wrng">*this field required</p>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <button (click)="signUp()" type="submit" class="button" value="Register">Register</button>
+    </form>
+
+
+  </div>
+</div>
